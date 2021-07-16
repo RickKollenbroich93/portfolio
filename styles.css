@@ -3,3 +3,48 @@
 *::after {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  color: black;
+  font-size: 1em;
+}
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.links {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  background: white;
+  height: auto;
+}
+.banner {
+  display: grid;
+  background: white;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+.navbar {
+  display: grid;
+  background: hotpink;
+  grid-template-columns: repeat(auto-fit, minmax(10em, auto));
+}
+.footer {
+  list-style-type: none;
+  display: grid;
+  color: red;
+  grid-template-columns: auto reapeat(3, 100px);
+}
+.footer ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
