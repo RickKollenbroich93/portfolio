@@ -20,16 +20,20 @@ h3 {
 } */
 main {
   display: block;
+  background-color: white;
 }
 section:nth-child(odd) {
   background-color: #7ead9d;
+  border: solid #7ead9d 2px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25em, auto));
   grid-template-rows: 1fr;
   justify-items: center;
   margin: 4em;
+  padding: 2em;
 }
 .sectionheader {
   text-align: center;
@@ -52,13 +56,13 @@ section:nth-child(odd) {
   color: white;
 }
 .header {
-  background: white;
   height: auto;
 }
 .banner {
   display: grid;
-  background: white;
+  background: #d6d6d6d2;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  padding: 4em;
 }
 .navbar {
   display: grid;
@@ -84,6 +88,3 @@ section:nth-child(odd) {
   margin: 20px;
   text-align: center;
 }
-/* .gridinskills {
-  display: grid;
-} */
