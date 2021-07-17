@@ -53,10 +53,32 @@ section:nth-child(odd) {
 .links a:hover {
   background-color: #95d6b8;
   padding: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
+}
+.article {
+  text-align: center;
+  height: auto;
+  padding: 20px;
+  border: solid rgba(255, 0, 0, 0) 4px;
+}
+.article:hover {
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: #ffffff;
+  border-color: #d6d6d6d2;
 }
 .header {
   height: auto;
+}
+.banner img {
+  width: 25em;
+  height: auto;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 .banner {
   display: grid;
@@ -85,6 +107,7 @@ section:nth-child(odd) {
 .gridskills {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 15px;
   margin: 20px;
   text-align: center;
 }
