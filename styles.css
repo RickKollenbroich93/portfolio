@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "Archivo", sans-serif;
@@ -15,14 +18,13 @@ h1 {
 h3 {
   font-size: 2em;
 }
-/* #containercolor {
-  background-color: #7ead9d;
-} */
 main {
   display: block;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
 }
+
 section:nth-child(odd) {
+  /* background: linear-gradient(55deg, #7ead9d 0%, #1fc8db 51%, #2cb5e8 85%); */
   background-color: #7ead9d;
   border: solid #7ead9d 2px;
 }
@@ -53,6 +55,10 @@ section:nth-child(odd) {
 .links a:hover {
   background-color: #95d6b8;
   padding: 15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   color: rgb(255, 255, 255);
 }
 .article {
@@ -82,7 +88,7 @@ section:nth-child(odd) {
 }
 .banner {
   display: grid;
-  background: #d6d6d6d2;
+  background-color: #d6d6d6d2;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   padding: 4em;
 }
